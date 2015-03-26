@@ -1,0 +1,13 @@
+# Site settings
+title: Billy's Blog 
+name: William A Stevens V
+email: contact@wastevensv.com
+description: > # this means to ignore newlines until "baseurl:"
+  This is a blog dedicated to recording me, my projects, and my life.
+  It's primarily designed for me and anyone who finds what I do interesting.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://blog.wastevensv.com" # the base hostname & protocol for your site
+github_username:  wastevensv
+
+# Build settings
+markdown: kramdown

@@ -4,12 +4,12 @@ title:  "Post 2: QOTD Project"
 author: William Stevens
 date:   2015-04-06 8:00:00
 categories: jekyll update
-photo: /img/04-06-15-qotd-workspace.jpg
+photo: /img/2015-04-06-qotd-workspace.jpg
 ---
 
 Recently I stumbled accross an interesting Wikipedia article on the [QOTD Protocol](https://en.wikipedia.org/wiki/QOTD). As a part of my C++ programming practice I decided to write a basic implementation of the protocol.
 
-The program reads the quotes from a plaintext file with each quote seperated by an asterisk (*) (this means a quote can contain any character except an asterisk). The first 'quote' is actually the number of quotes in the file and is skipped. Once a client connects, the program skips a random number of quotes and then prints the next quote.
+The program reads the quotes from a plaintext file with each quote seperated by an asterisk (\*) (this means a quote can contain any character except an asterisk). The first 'quote' is actually the number of quotes in the file and is skipped. Once a client connects, the program skips a random number of quotes and then prints the next quote.
 
 I started with a command line program with no networking to test the process of reading the file and picking a quote. Once this worked, I moved on to adding networking capability using the unix socket library. After going through the tutorial at [linuxhowtos.org](http://www.linuxhowtos.org/C_C++/socket.htm) I understood enough of the code to implement it in my own program.
 
@@ -88,10 +88,10 @@ int main(int argc, char** argv) {
         error("ERROR, could not bind IP address.", 2);
 
     listen(sockfd,5); // Listen, allowing up to 5 clients waiting.
-    
+
     ifstream qfile ("test.qotd");
 
-   
+
     signal(SIGINT,term);
 
     while(1) {

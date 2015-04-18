@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Post 1: New Spring, New Start"
+title:  "Post 1.0: New Spring, New Start"
 author: William Stevens
 date:   2015-03-29 18:00:00
 categories: jekyll update

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Post 2: QOTD Project"
+title:  "Post 2.0: QOTD Project"
 author: William Stevens
 date:   2015-04-06 8:00:00
 categories: jekyll update

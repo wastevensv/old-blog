@@ -5,9 +5,11 @@
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
+    width: 100%;
+    background:white;
 
     // Positioning context for the mobile navigation icon
-    position: relative;
+    position: fixed;
 }
 
 .site-title {
@@ -163,6 +165,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    padding-top: 80px;
 }
 
 .page-heading {
@@ -178,6 +181,16 @@
     }
 }
 
+.sub {
+  padding-left: 20px;
+  color: $text-color + #222
+}
+
+.twosub {
+  padding-left: 25px;
+  color: $text-color + #444
+}
+
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
@@ -188,7 +201,49 @@
     font-size: 24px;
 }
 
+/**
+ * Project Cards
+ */
+.project-list {
+    display:block;
+    white-space: nowrap;
+    overflow-x: scroll;
+    height:160px;
+}
 
+.project-list-item {
+    background: $grey-color-dark;
+    color: $grey-color-light;
+    white-space:initial;
+    display: inline-block;
+    vertical-align:top;
+    width: 300px;
+    height: 100%;
+    padding: 0px 5px 0px 5px;
+}
+
+.project-grid {
+    display:block;
+}
+
+.project-grid-item {
+    background: $grey-color-dark;
+    color: $grey-color-light;
+    white-space:initial;
+    display: inline-block;
+    vertical-align:top;
+    width: 300px;
+    height: 150px;
+    margin: 5px;
+    padding: 0px 5px 0px 5px;
+}
+
+.project-link {
+    color: white;
+    font-weight:bold;
+    display:block;
+    text-align: center;
+}
 
 /**
  * Posts
@@ -197,7 +252,7 @@
     margin-bottom: $spacing-unit;
 }
 
-.p-name {
+.post-title {
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
@@ -207,7 +262,7 @@
     }
 }
 
-.e-content {
+.post-content {
     margin-bottom: $spacing-unit;
 
     h2 {

@@ -5,6 +5,7 @@ author: William Stevens
 date:   2015-04-18 16:00:00
 categories: jekyll update
 photo: /img/2015-04-18-basement.jpg
+summary: Today 3 more truckloads of stuff left my basement. One was mostly cardboard and went to the dump. The next two loads went to a local electronics recycling center.
 ---
 Today 3 more truckloads of stuff left my basement. One was mostly cardboard and went to the dump. I didn't have much attachment to any of that.
 

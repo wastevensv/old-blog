@@ -5,6 +5,7 @@ author: William Stevens
 date:   2015-03-29 18:00:00
 categories: jekyll update
 photo: /img/2015-03-29-junk-pile.jpg
+summary: Today I took the time to empty out my basement of all the old stuff I no longer need. The idea of throwing out stuff that someone could still use always bothered me, so I gave a good portion of the useful stuff to a friend who I knew would use it.
 ---
 
 Today I took the time to empty out my basement of all the old stuff I no longer need. The idea of throwing out stuff that someone could still use always bothered me, so I gave a good portion of the useful stuff to a friend who I knew would use it. This helped to make sure that what was left could be thrown out without anyone missing it. This included a partially disassembled VCR, some half used cables, and a box of stuff I got off the side of the road and never used.

@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <ul class="project-grid">
+    {% for project in site.data.projects %}
+      {% if project.image %}
+      <li class="project-grid-item" style="background-image:url({{ project.image | prepend: site.baseurl }})">
+      {% else %}
+      <li class="project-grid-item">
+      {% endif %}
+        <a class="project-link" href="{{ project.link | prepend: site.baseurl }}">{{ project.title }}</a>
+        {% if project.description %}
+        <p class="project-desc">
+          {{ project.description }}
+        </p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>

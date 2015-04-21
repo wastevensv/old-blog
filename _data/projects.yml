@@ -1,0 +1,19 @@
+- title: FRC Robotics
+  image: /projects/frc/frc.png
+  link: /projects/frc/
+  description: My work as a member of the BVT Team 61 programming division.
+
+- title: QOTD
+  image: /projects/qotd/qotd.png
+  link: /projects/qotd/
+  description: An experiment in C/C++ networking and a revival of a dead internet humor protocol.
+
+- title: CCENT
+  image: /projects/cisco/cisco.png
+  link: /projects/cisco/
+  description: A fully functional simulated Cisco network with OSPF routing, DHCP, and NAT translation.
+
+- title: PC Build
+  image: /projects/pcbuild/pcbuild.png
+  link: /projects/pcbuild/
+  description: A custom built PC with automated quote and purchase order excel templates.

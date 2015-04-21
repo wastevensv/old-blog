@@ -4,8 +4,24 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <ul class="project-list">
+    {% for project in site.data.projects %}
+      {% if project.image %}
+      <li class="project-list-item" style="background-image:url({{ project.image | prepend: site.baseurl }})">
+      {% else %}
+      <li class="project-list-item">
+      {% endif %}
+        <a class="project-link" href="{{ project.link | prepend: site.baseurl }}">{{ project.title }}</a>
+        {% if project.description %}
+        <p class="project-desc">
+          {{ project.description }}
+        </p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
 
+  <h1 class="page-heading">Posts</h1>
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
@@ -14,6 +30,7 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+        <p> {{ post.summary }} </p>
       </li>
     {% endfor %}
   </ul>

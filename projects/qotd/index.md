@@ -1,11 +1,9 @@
 ---
-layout: post
-title:  "Post 2.0: QOTD Project"
-author: William Stevens
-date:   2015-04-06 8:00:00
-categories: jekyll update
-photo: /img/2015-04-06-qotd-workspace.jpg
+layout: page
+title:  "QOTD Project"
 ---
+
+![QOTD Project](./2015-04-06-qotd-workspace.jpg)
 
 Recently I stumbled accross an interesting Wikipedia article on the [QOTD Protocol](https://en.wikipedia.org/wiki/QOTD). As a part of my C++ programming practice I decided to write a basic implementation of the protocol.
 

@@ -8,6 +8,11 @@
   link: /projects/qotd/
   description: An experiment in C/C++ networking and a revival of a dead internet humor protocol.
 
+- title: Plotie
+  image: /projects/plotie/plotie.png
+  link: /projects/plotie/
+  description: A plot picker project made for my writer friend.
+
 - title: CCENT
   image: /projects/cisco/cisco.png
   link: /projects/cisco/

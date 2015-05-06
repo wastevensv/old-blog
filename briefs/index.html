@@ -1,0 +1,21 @@
+---
+layout: page
+title: Recent Briefs
+permalink: /briefs/
+---
+<p>
+<a href="/briefs.xml"> Subscribe </a> - <a href="./all.html"> All briefs </a>
+</p>
+<ul class="post-list">
+  {% if site.data.briefs.size > 10 %}
+    {% assign o = site.data.briefs | size | minus:10 %}
+  {%else%}
+    {% assign o = 0 %}
+  {%endif%}
+  {% for brief in site.data.briefs reversed offset:o %}
+    <li>
+      <b>{{ brief.time | date: "%b %-d, %Y %R" }}</b><a href="./all.html#{{forloop.rindex | plus: o}}">#{{forloop.rindex | plus: o}}</a><br>
+      {{ brief.text | newline_to_br}}
+    </li>
+  {% endfor %}
+</ul>

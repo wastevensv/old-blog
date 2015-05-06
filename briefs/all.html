@@ -1,0 +1,16 @@
+---
+layout: page
+title: All Briefs
+permalink: /briefs/all.html
+---
+<p>
+<a href="/briefs.xml"> Subscribe </a> - <a href="./index.html"> Recent briefs </a>
+</p>
+<ul class="post-list">
+  {% for brief in site.data.briefs reversed %}
+    <li>
+      <b>{{ brief.time | date: "%b %-d, %Y %R" }}</b><a id="{{forloop.rindex}}" href="#{{forloop.rindex}}">#{{forloop.rindex}}</a><br>
+      {{ brief.text | newline_to_br}}
+    </li>
+  {% endfor %}
+</ul>

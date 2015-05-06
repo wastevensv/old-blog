@@ -7,9 +7,6 @@
     min-height: 56px;
     width: 100%;
     background:white;
-
-    // Positioning context for the mobile navigation icon
-    position: fixed;
 }
 
 .site-title {
@@ -165,7 +162,6 @@
  */
 .page-content {
     padding: $spacing-unit 0;
-    padding-top: 80px;
 }
 
 .page-heading {

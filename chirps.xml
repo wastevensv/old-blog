@@ -6,8 +6,8 @@ layout: null
   <channel>
     <title>{{"Quick Chirps" | xml_escape}}</title>
     <description>{{ "A feed of brief thoughts and stuff that I want to share." | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/briefs/</link>
-    <atom:link href="{{ "/briefs.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
+    <link>{{ site.url }}{{ site.baseurl }}/chirps/</link>
+    <atom:link href="{{ "/chrips.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
@@ -21,11 +21,11 @@ layout: null
         <title>{{ brief.text | split:'.' | first | append:'.' | truncate:90 '...' | xml_escape }}</title>
         <description>
         {{ brief.text | split:'.' | first | append:'.' | truncate:90 '...' | xml_escape }}
-        {{forloop.rindex | plus: o | prepend: "/briefs/all.html#" | prepend: site.baseurl | prepend: site.url | xml_escape }}
+        {{forloop.rindex | plus: o | prepend: "/chirps/all.html#" | prepend: site.baseurl | prepend: site.url | xml_escape }}
         </description>
         <pubDate>{{ brief.time | date_to_rfc822 }}</pubDate>
-        <link>{{forloop.rindex | plus: o | prepend: "/briefs/all.html#" | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{forloop.rindex | plus: o | prepend: "/briefs/all.html#" | prepend: site.baseurl | prepend: site.url }}</guid>
+        <link>{{forloop.rindex | plus: o | prepend: "/chirps/all.html#" | prepend: site.baseurl | prepend: site.url }}</link>
+        <guid isPermaLink="true">{{forloop.rindex | plus: o | prepend: "/chirps/all.html#" | prepend: site.baseurl | prepend: site.url }}</guid>
       </item>
     {% endfor %}
   </channel>

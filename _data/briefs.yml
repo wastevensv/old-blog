@@ -27,3 +27,7 @@
 - time: 2015-05-06 17:04
   text: >
     First test chirp.
+    
+- time: 2015-05-06 17:11
+  text: >
+    Finished renaming briefs to chirps (in most places).

@@ -3,3 +3,4 @@ _drafts
 .sass-cache
 Gemfile.lock
 .backup
+*.swp
